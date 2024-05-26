@@ -47,14 +47,14 @@
     <div id="legend" class="legend">
         <div>
             <div class="legend-header">Статистика</div>
-            <div class="legend-item"><div class="legend-color" style="background-color: #FF0000;"></div> Красная точка - <span id="redCount"></span></div>
-            <div class="legend-item"><div class="legend-color" style="background-color: #00FF00;"></div> Зеленая точка - <span id="greenCount"></span></div>
-            <div class="legend-item"><div class="legend-color" style="background-color: #0000FF;"></div> Синяя точка - <span id="blueCount"></span></div>
-            <div class="legend-item"><div class="legend-color" style="background-color: #FFFF00;"></div> Желтая точка - <span id="yellowCount"></span></div>
+            <div class="legend-item"><div class="legend-color" style="background-color: #FF0000;"></div> Chinee Apple - <span id="redCount"></span></div>
+            <div class="legend-item"><div class="legend-color" style="background-color: #00FF00;"></div> Lantana - <span id="greenCount"></span></div>
+            <div class="legend-item"><div class="legend-color" style="background-color: #0000FF;"></div> Seam weed - <span id="blueCount"></span></div>
+            <div class="legend-item"><div class="legend-color" style="background-color: #FFFF00;"></div> Parkinsonia - <span id="yellowCount"></span></div>
         </div>
         <div class="legend-stats">
-            <div>Общее количество распознанных сорняков - <span id="totalCount"></span></div>
-            <div>Точность распознавания составила - 80%</div>
+            <div>Общее количество распознанных сорняков - 255 <span id="totalCount"></span></div>
+            <div>Точность распознавания составила - 60%</div>
         </div>
     </div>
 
@@ -87,7 +87,7 @@
                 groups.push(new ymaps.GeoObjectCollection());
             }
 
-            for (var i = 0; i < 2000; i++) {
+            for (var i = 0; i < 255; i++) {
                 var lat, lon, colorIndex;
                 do {
                     lat = 55.493115 + Math.random() * (55.506995 - 55.493115);
